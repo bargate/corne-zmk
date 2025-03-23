@@ -25,6 +25,7 @@
     brac_mo: brackets_layer_mo_tog {
         compatible = "zmk,behavior-hold-tap";
         label = "brac_mo";
+        #binding-cells = <2>;
         tapping-term-ms = <280>;
         quick-tap-ms = <175>;
         require-prior-idle-ms = <150>;
