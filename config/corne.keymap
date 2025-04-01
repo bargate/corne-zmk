@@ -43,21 +43,6 @@
         hold-trigger-on-release;
         bindings = <&mo>, <&kp>;
     };
-    caps_word: caps_word {
-      compatible = "zmk,behavior-caps-word";
-      label = "CAPS_WORD";
-      #binding-cells = <0>;
-      continue-list = <UNDERSCORE MINUS>;
-    };
-  };
-
-  combos {
-    compatible = "zmk,combos";
-    combo_caps_word {
-      timeout-ms = <50>;
-      key-positions = <12 37>;  // Left + right shift
-      bindings = <&caps_word>;
-    };
   };
         keymap {
                 compatible = "zmk,keymap";
