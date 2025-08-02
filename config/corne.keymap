@@ -45,6 +45,17 @@
         hold-trigger-on-release;
         bindings = <&mo>, <&kp>;
     };
+
+    instant_layer: instant_layer_tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "instant_layer";
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
+        quick-tap-ms = <175>;
+        flavor = "tap-preferred";
+        hold-trigger-on-release;
+        bindings = <&mo>, <&kp>;
+    };
   };
   combos {
     compatible = "zmk,combos";
